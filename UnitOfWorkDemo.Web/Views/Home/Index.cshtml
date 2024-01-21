@@ -1,0 +1,12 @@
+﻿@model IEnumerable<UnitOfWorkDemo.Web.Entities.User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    
+    @foreach (var item in Model)
+    {
+        <p><strong>Username:</strong> @item.Username</p>
+    }
+</div>
